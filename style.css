@@ -1,58 +1,196 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yeseva One", serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+body{
+    background-color: white;
+    height: 100vh;
 }
 
-header {
-  background-color: #333;
-  padding: 20px 0;
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+.flex{
+    display: flex;
 }
 
-nav ul li {
-  margin: 0 15px;
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(0, 238, 255);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+h2.titulo{
+    color: black;
+    font-size: 35px;
+    text-align: center;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
+h2.titulo span{
+    color: rgb(0, 238, 255);
 }
 
-section h2 {
-  margin-bottom: 20px;
-  color: #333;
+button:hover{
+    box-shadow: 0px 0px 10px rgb(0, 238, 255);
+    transform: scale(1.05);
 }
 
-.especialidade {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+/* Estilo do cabeçalho */
+
+header{
+    padding: 40px 4%;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(68, 67, 67);
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover{
+    color: rgb(0, 238, 255);
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: rgb(0, 238, 255);
+    font-size: 44px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: black;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+/* Estilo das especialidades */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 20px;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 40px;
+    border: 2px solid black;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(0, 238, 255);
+}
+
+.especialidades .especialidades-box i{
+    font-size: 60px;
+    color: rgb(0, 238, 255);
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+/* Estilo sobre */
+
+section.sobre{
+    padding: 100px 4%;
+}
+
+section .img-sobre img{
+    width: 400px;
+    border-radius: 60%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: black;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(0, 238, 255);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(0, 238, 255);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
 }
