@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
     height: 100vh;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 
 h2.titulo{
-    color: black;
+    color: white;
     font-size: 35px;
     text-align: center;
 }
@@ -92,7 +92,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1 {
-    color:black;
+    color:white;
     font-size: 40px;
     line-height: 40px;
 }
@@ -103,7 +103,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site p{
-    color: black;
+    color: white;
     margin: 40px 0;
 }
 
@@ -124,9 +124,9 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
-    color: black;
+    color: white;
     padding: 40px;
-    border: 2px solid black;
+    border: 2px solid white;
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
@@ -164,7 +164,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
-    color:black;
+    color:white;
 }
 
 .sobre .txt-sobre h2{
